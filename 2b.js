@@ -1,3 +1,4 @@
+//arrow function takes in argument
 const y = (value)=>{
     console.log(value);
 }
