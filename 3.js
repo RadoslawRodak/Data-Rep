@@ -22,8 +22,31 @@ let listAllTasks = (tasks) => {
     });
 }
 
+//invoke function
 listAllTasks(tasks);
-//tasks.push("something");
+
+//arrow function for deleting tasks
+let deleteTasks = (task) => {
+    let index = tasks.indexOf(task);
+    if (index > -1) {
+        tasks.splice(index, 1);
+        console.log(task + " has been removed from my Tasks")
+    }
+
+    else {
+        console.log(task + " not found in my Tasks")
+    }
+
+    return tasks.length;
+
+}
+
+//invoke function
+addTask("hockey")
+addTask("rugby")
+listAllTasks(tasks);
+deleteTasks("dfdfasf");
+deleteTasks("tennis");
 
 //tasks.length;
 
