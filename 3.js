@@ -37,6 +37,7 @@ let deleteTasks = (task) => {
         console.log(task + " not found in my Tasks")
     }
 
+    //return length of array
     return tasks.length;
 
 }
