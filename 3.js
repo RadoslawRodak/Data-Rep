@@ -14,11 +14,15 @@ let addTask = (task) => {
 //add gaelic to the array
 console.log(addTask("Gaelic"));
 
+//list all tasks arrow function
+let listAllTasks = (tasks) => {
 
-let listAllTaks = () => {
-    
-
+    tasks.forEach(task => {
+        console.log(task);
+    });
 }
+
+listAllTasks(tasks);
 //tasks.push("something");
 
 //tasks.length;
